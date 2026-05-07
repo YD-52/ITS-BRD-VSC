@@ -34,9 +34,9 @@ Der Originalwert geht verloren.
   Signed bleibt OK.
 
 ## Eigene Tests / aufgetretene Fragen
-- Was, wenn LDRH statt LDR bei Anw-06? → Liest nur 16 Bit, VariableB bleibt gleic.
-- Was, wenn "!" bei Anw-13 fehlt? → R0 bleibt stehen, kein Iterieren möglich.
-- Wie sieht -52 als Halfword aus? → 0xFFCC (Zweierkomplement: NOT(0x0034)+1).
-- Wie sieht -128 als 32-Bit signed aus? → 0xFFFFFF80 (vorzeichenerweitert mit Fs).
-- Warum geht MOV mit -128, aber nicht mit 0x12345678? → Kompakte Codierung 
+- Was, wenn LDRH statt LDR bei Anw-06? : Liest nur 16 Bit, VariableB bleibt gleic.
+- Was, wenn "!" bei Anw-13 fehlt? : R0 bleibt stehen, kein Iterieren möglich.
+- Wie sieht -52 als Halfword aus? : 0xFFCC (Zweierkomplement: NOT(0x0034)+1).
+- Wie sieht -128 als 32-Bit signed aus? : 0xFFFFFF80 (vorzeichenerweitert mit Fs).
+- Warum geht MOV mit -128, aber nicht mit 0x12345678? : Kompakte Codierung 
   der Negativzahl möglich, willkuerliche 32-Bit-Werte nicht.
